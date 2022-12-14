@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:milligrade_flutter/features/thermostat/config/const/colors.dart';
+import 'package:milligrade_flutter/features/thermostat/config/const/fonts.dart';
 import 'package:milligrade_flutter/features/thermostat/presentation/pages/home_page.dart';
+
+import 'features/thermostat/presentation/pages/thermostat_list_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -7,20 +11,20 @@ void main() {
 
 class MyApp extends StatelessWidget {
   MyApp({super.key});
-  final primaryColor = Colors.indigo[700];
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Flutter MilliGrade',
       theme: ThemeData(
-          fontFamily: 'Nunito',
+          scaffoldBackgroundColor: CustomColor.bg_main_color ,
+          fontFamily: Fonts.ROBOTO,
           primarySwatch: Colors.indigo,
-          primaryColor: primaryColor,
+          primaryColor: CustomColor.bg_main_color,
           listTileTheme: ListTileThemeData(),
-          toggleableActiveColor: primaryColor,
-          appBarTheme: AppBarTheme(backgroundColor: primaryColor)),
-      home: HomePage(),
+          toggleableActiveColor: CustomColor.bg_main_color,
+          appBarTheme: AppBarTheme(backgroundColor: CustomColor.bg_main_color)),
+      home: ThermostatListPage(),
     );
   }
 }
