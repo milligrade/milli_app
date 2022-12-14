@@ -2,8 +2,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-import '../../config/const/assets.dart';
-import '../../config/const/colors.dart';
+import '../../../config/const/assets.dart';
+import '../../../config/const/colors.dart';
 
 class DrawerLayoutWidget extends StatelessWidget {
   const DrawerLayoutWidget({super.key});

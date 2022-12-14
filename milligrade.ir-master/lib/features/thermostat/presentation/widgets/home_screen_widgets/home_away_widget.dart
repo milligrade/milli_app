@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 
-import '../../config/const/colors.dart';
+import '../../../config/const/colors.dart';
 
 class HomeAwayWidget extends StatefulWidget {
   const HomeAwayWidget({super.key});

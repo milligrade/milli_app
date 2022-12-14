@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:milligrade_flutter/features/thermostat/presentation/widgets/action_grade_widget.dart';
-import 'package:milligrade_flutter/features/thermostat/presentation/widgets/current_grade_widget.dart';
-import 'package:milligrade_flutter/features/thermostat/presentation/widgets/home_away_widget.dart';
-import 'package:milligrade_flutter/features/thermostat/presentation/widgets/setter_grade_widget.dart';
+import 'package:milligrade_flutter/features/thermostat/presentation/widgets/home_screen_widgets/action_grade_widget.dart';
+import 'package:milligrade_flutter/features/thermostat/presentation/widgets/home_screen_widgets/current_grade_widget.dart';
+import 'package:milligrade_flutter/features/thermostat/presentation/widgets/home_screen_widgets/home_away_widget.dart';
+import 'package:milligrade_flutter/features/thermostat/presentation/widgets/home_screen_widgets/setter_grade_widget.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);

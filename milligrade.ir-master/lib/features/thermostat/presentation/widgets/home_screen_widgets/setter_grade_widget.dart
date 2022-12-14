@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-import '../../config/const/assets.dart';
-import '../../config/const/colors.dart';
-import '../../config/const/fonts.dart';
+import '../../../config/const/assets.dart';
+import '../../../config/const/colors.dart';
+import '../../../config/const/fonts.dart';
 
 class SetterGradeWidget extends StatelessWidget {
   const SetterGradeWidget({Key? key}) : super(key: key);

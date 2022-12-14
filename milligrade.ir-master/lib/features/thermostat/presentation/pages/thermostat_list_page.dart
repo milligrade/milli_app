@@ -1,6 +1,6 @@
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:milligrade_flutter/features/thermostat/presentation/widgets/drawer_layout_widget.dart';
+import 'package:milligrade_flutter/features/thermostat/presentation/widgets/home_screen_widgets/drawer_layout_widget.dart';
 import 'package:milligrade_flutter/features/thermostat/presentation/widgets/thermostat_list_screen.dart';
 import '../../config/const/assets.dart';
 import '../../config/const/colors.dart';

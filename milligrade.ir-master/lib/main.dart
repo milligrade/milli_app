@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:milligrade_flutter/features/thermostat/config/const/colors.dart';
 import 'package:milligrade_flutter/features/thermostat/config/const/fonts.dart';
 import 'package:milligrade_flutter/features/thermostat/presentation/pages/home_page.dart';
+import 'package:milligrade_flutter/features/thermostat/presentation/pages/off_page.dart';
 
 import 'features/thermostat/presentation/pages/thermostat_list_page.dart';
 
@@ -23,8 +24,8 @@ class MyApp extends StatelessWidget {
           primaryColor: CustomColor.bg_main_color,
           listTileTheme: ListTileThemeData(),
           toggleableActiveColor: CustomColor.bg_main_color,
-          appBarTheme: AppBarTheme(backgroundColor: CustomColor.bg_main_color)),
-      home: ThermostatListPage(),
+          appBarTheme: const AppBarTheme(backgroundColor: CustomColor.bg_main_color)),
+      home: OffPage(),
     );
   }
 }

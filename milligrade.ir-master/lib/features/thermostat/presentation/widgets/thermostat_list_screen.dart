@@ -4,7 +4,7 @@ import 'package:flutter_svg/svg.dart';
 
 import '../../config/const/assets.dart';
 import '../../config/const/colors.dart';
-import 'list_view_item_widget.dart';
+import 'thermostat_list_screen_widgets/list_view_item_widget.dart';
 
 class ThermostatListScreen extends StatefulWidget {
   const ThermostatListScreen({super.key});

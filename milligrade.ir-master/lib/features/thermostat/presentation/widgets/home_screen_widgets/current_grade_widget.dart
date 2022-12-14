@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-import '../../config/const/assets.dart';
-import '../../config/const/colors.dart';
-import '../../config/const/fonts.dart';
+import '../../../config/const/assets.dart';
+import '../../../config/const/colors.dart';
+import '../../../config/const/fonts.dart';
 
 class CurrentGradeWidget extends StatelessWidget {
   const CurrentGradeWidget({Key? key}) : super(key: key);

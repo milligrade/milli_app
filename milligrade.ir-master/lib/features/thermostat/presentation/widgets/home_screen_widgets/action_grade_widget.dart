@@ -3,8 +3,8 @@ import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:milligrade_flutter/features/thermostat/config/const/assets.dart';
 
-import '../../config/const/colors.dart';
-import '../../config/const/fonts.dart';
+import '../../../config/const/colors.dart';
+import '../../../config/const/fonts.dart';
 
 class ActionGradeWidget extends StatelessWidget {
   const ActionGradeWidget({Key? key}) : super(key: key);
