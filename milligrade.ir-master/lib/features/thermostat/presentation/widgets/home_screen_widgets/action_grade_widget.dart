@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:milligrade_flutter/features/thermostat/config/const/assets.dart';
-
+import 'package:milligrade_flutter/features/thermostat/presentation/widgets/home_screen_widgets/fan_speed_bottom_sheet_widget.dart';
+import 'package:milligrade_flutter/features/thermostat/presentation/widgets/home_screen_widgets/mode_bottom_sheet_widget.dart';
+import 'package:milligrade_flutter/features/thermostat/presentation/widgets/home_screen_widgets/timer_bottom_sheet_widget.dart';
 import '../../../config/const/colors.dart';
 import '../../../config/const/fonts.dart';
 
@@ -31,7 +33,9 @@ class ActionGradeWidget extends StatelessWidget {
                       boxShape: NeumorphicBoxShape.roundRect(
                           BorderRadius.circular(16)),
                       depth: 3),
-                  onPressed: () {},
+                  onPressed: () => showModalBottomSheet(
+                        context: context,
+                        builder: (context) => const ModeBottomSheetWidget()),
                   child: SvgPicture.asset(ImageVectorConst.heat_icon)),
               Padding(
                 padding: EdgeInsets.only(top: h * 0.015),
@@ -59,7 +63,9 @@ class ActionGradeWidget extends StatelessWidget {
                       boxShape: NeumorphicBoxShape.roundRect(
                           BorderRadius.circular(16)),
                       depth: 3),
-                  onPressed: () {},
+                   onPressed: () => showModalBottomSheet(
+                        context: context,
+                        builder: (context) => const FanSpeedBottomSheetWidget()),
                   child: SvgPicture.asset(ImageVectorConst.fan_icon)),
               Padding(
                 padding: EdgeInsets.only(top: h * 0.015),
@@ -87,7 +93,9 @@ class ActionGradeWidget extends StatelessWidget {
                       boxShape: NeumorphicBoxShape.roundRect(
                           BorderRadius.circular(16)),
                       depth: 3),
-                  onPressed: () {},
+                   onPressed: () => showModalBottomSheet(
+                        context: context,
+                        builder: (context) => TimeBottomSheetWidget()),
                   child: SvgPicture.asset(ImageVectorConst.timer)),
               Padding(
                 padding: EdgeInsets.only(top: h * 0.015),

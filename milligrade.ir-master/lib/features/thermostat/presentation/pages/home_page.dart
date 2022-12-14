@@ -55,7 +55,6 @@ class HomePage extends StatelessWidget {
                       NeumorphicBoxShape.roundRect(BorderRadius.circular(16)),
                 ),
                 child: SvgPicture.asset(ImageVectorConst.arrow_back_icon))),
-
         body: const HomeScreen());
   }
 }

@@ -14,8 +14,8 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
+    
     var h = MediaQuery.of(context).size.height;
-    var w = MediaQuery.of(context).size.width;
 
     return Column(
       children: [
