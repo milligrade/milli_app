@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
           listTileTheme: ListTileThemeData(),
           toggleableActiveColor: CustomColor.bg_main_color,
           appBarTheme: const AppBarTheme(backgroundColor: CustomColor.bg_main_color)),
-      home: HomePage(),
+      home: ThermostatListPage(),
     );
   }
 }
