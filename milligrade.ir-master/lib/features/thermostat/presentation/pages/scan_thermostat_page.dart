@@ -1,17 +1,21 @@
+import 'package:flutter/material.dart';
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:milligrade_flutter/features/thermostat/config/const/assets.dart';
 import 'package:milligrade_flutter/features/thermostat/presentation/widgets/home_screen_widgets/drawer_layout_widget.dart';
-import 'package:milligrade_flutter/features/thermostat/presentation/widgets/thermostat_list_screen.dart';
-import '../../config/const/assets.dart';
+import 'package:milligrade_flutter/features/thermostat/presentation/widgets/scan_thermostat_screen.dart';
 import '../../config/const/colors.dart';
 
-class ThermostatListPage extends StatelessWidget {
+class ScanThermostatPage extends StatelessWidget {
+  const ScanThermostatPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     var h = MediaQuery.of(context).size.height;
     var w = MediaQuery.of(context).size.width;
 
     return Scaffold(
+      
         appBar: AppBar(
           leading: Builder(
               builder: (context) => IconButton(
@@ -41,14 +45,17 @@ class ThermostatListPage extends StatelessWidget {
               )),
           elevation: 0,
         ),
-        body: const ThermostatListScreen(),
+        
+        body: ScanThermostatScreen(),
+        
         drawer: const DrawerLayoutWidget(),
+        
         floatingActionButton: NeumorphicButton(
           margin:
               EdgeInsets.symmetric(vertical: h * 0.009, horizontal: w * 0.012),
           onPressed: () {},
           style: NeumorphicStyle(
-              //shape: NeumorphicShape.concave,
+              shape: NeumorphicShape.concave,
               boxShape: NeumorphicBoxShape.roundRect(BorderRadius.circular(64)),
               depth: 8,
               lightSource: LightSource.topLeft,
