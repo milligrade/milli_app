@@ -15,9 +15,15 @@ class ThermostatListPage extends StatelessWidget {
         appBar: AppBar(
           leading: Builder(
               builder: (context) => IconButton(
+                    padding: EdgeInsets.only(
+                      left: w * 0.06,
+                    ),
                     icon: NeumorphicButton(
-                        padding: EdgeInsets.symmetric(
-                            horizontal: w * 0.01, vertical: h * 0.005),
+                        padding: EdgeInsets.only(
+                            left: w * 0.01,
+                            right: w * 0.01,
+                            top: h * 0.01,
+                            bottom: h * 0.01),
                         onPressed: () => Scaffold.of(context).openDrawer(),
                         style: NeumorphicStyle(
                           color: CustomColor.bg_main_color,
@@ -27,9 +33,9 @@ class ThermostatListPage extends StatelessWidget {
                         child: SvgPicture.asset(ImageVectorConst.menu_icon)),
                     onPressed: () => print('drawer opened'),
                   )),
-          title: const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 25),
-              child: Text(
+          title: Padding(
+              padding: EdgeInsets.only(left: w * 0.05),
+              child: const Text(
                 "Thermostat list",
                 style: TextStyle(color: CustomColor.txt_color),
               )),

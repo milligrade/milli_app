@@ -79,7 +79,6 @@ class ListeViewItemWidget extends StatelessWidget {
           margin:
               EdgeInsets.symmetric(vertical: h * 0.01, horizontal: w * 0.04),
           style: NeumorphicStyle(
-            shape: NeumorphicShape.concave,
             color: CustomColor.bg_color,
             depth: -3,
             boxShape: NeumorphicBoxShape.roundRect(BorderRadius.circular(16)),
